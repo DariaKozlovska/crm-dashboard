@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <header class="sidebar__header">
+        <img src="images/logo.png" alt="Logo" class="sidebar__header-image" />
+        <h1 class="sidebar__header-h">Dashboard <span class="sidebar__header-span">v.01</span></h1>
+      </header>
+      <nav>
+        <a href="#" class="sidebar__menu-item sidebar__menu-item--active"
+          >Dashboard</a
+        >
+        <a href="#" class="sidebar__menu-item">Product</a>
+        <a href="#" class="sidebar__menu-item">Customers</a>
+        <a href="#" class="sidebar__menu-item">Income</a>
+        <a href="#" class="sidebar__menu-item">Promote</a>
+        <a href="#" class="sidebar__menu-item">Help</a>
+      </nav>
+      <div class="sidebar__upgrade">Upgrade to PRO</div>
+      <div class="sidebar__profile">
+        <img src="https://via.placeholder.com/40" alt="Profile" />
+        <div>
+          <p>Evano</p>
+          <small>Project Manager</small>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="main-content__header">Hello Evano 👋</header>
+
+      <section class="main-content__summary-cards">
+        <div class="summary-card">
+          <h3 class="summary-card__title">Total Customers</h3>
+          <p class="summary-card__number">5,423</p>
+          <p class="summary-card__change">▲ 16% this month</p>
+        </div>
+        <div class="summary-card">
+          <h3 class="summary-card__title">Members</h3>
+          <p class="summary-card__number">1,893</p>
+          <p class="summary-card__change" style="color: #e53935">
+            ▼ 1% this month
+          </p>
+        </div>
+        <div class="summary-card">
+          <h3 class="summary-card__title">Active Now</h3>
+          <p class="summary-card__number">189</p>
+        </div>
+      </section>
+
+      <section class="table-container">
+        <h2>All Customers</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Customer Name</th>
+              <th>Company</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td><span class="status--active">Active</span></td>
+            </tr>
+            <!-- More rows as needed -->
+          </tbody>
+        </table>
+        <div class="pagination">
+          <a href="#" class="pagination__link pagination__link--active">1</a>
+          <a href="#" class="pagination__link">2</a>
+          <a href="#" class="pagination__link">3</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
