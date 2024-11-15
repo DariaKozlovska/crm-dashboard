@@ -54,9 +54,16 @@ span {
   padding: 15px;
   margin: 10px 0;
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 8px;
   transition: background 0.3s;
+}
+.sidebar__menu-item p {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
 .sidebar__menu-item:hover {
@@ -67,6 +74,27 @@ span {
 .sidebar__menu-item--active {
   color: white;
   background-color: #5932ea;
+}
+
+.sidebar__menu-item--active:hover {
+  color: white;
+  background-color: #5932ea;
+}
+
+.sidebar__menu-item--active .item-icon,
+.sidebar__menu-item--active .dashboard,
+.sidebar__menu-item--active .customer,
+.sidebar__menu-item--active .income {
+  stroke: white;
+}
+
+.item-icon {
+  fill: #9197b3;
+}
+
+.item-icon-stroke {
+  stroke: #9197b3;
+  fill: transparent;
 }
 
 .sidebar__upgrade {
@@ -297,9 +325,9 @@ th {
   text-decoration: none;
   transition: background 0.3s;
 }
-.pagination__btn{
-    display: flex;
-    gap: 12px;
+.pagination__btn {
+  display: flex;
+  gap: 12px;
 }
 .pagination__link:hover {
   background-color: #90caf9;
