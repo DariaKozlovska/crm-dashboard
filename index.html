@@ -13,55 +13,106 @@
   <body>
     <!-- Sidebar -->
     <aside class="sidebar">
-      <header class="sidebar__header">
-        <img src="images/logo.png" alt="Logo" class="sidebar__header-image" />
-        <h1 class="sidebar__header-h">Dashboard <span class="sidebar__header-span">v.01</span></h1>
-      </header>
-      <nav>
-        <a href="#" class="sidebar__menu-item sidebar__menu-item--active"
-          >Dashboard</a
-        >
-        <a href="#" class="sidebar__menu-item">Product</a>
-        <a href="#" class="sidebar__menu-item">Customers</a>
-        <a href="#" class="sidebar__menu-item">Income</a>
-        <a href="#" class="sidebar__menu-item">Promote</a>
-        <a href="#" class="sidebar__menu-item">Help</a>
-      </nav>
-      <div class="sidebar__upgrade">Upgrade to PRO</div>
-      <div class="sidebar__profile">
-        <img src="https://via.placeholder.com/40" alt="Profile" />
-        <div>
-          <p>Evano</p>
-          <small>Project Manager</small>
+      <div class="sidebar__top">
+        <header class="sidebar__header">
+          <img src="images/logo.png" alt="Logo" class="sidebar__header-image" />
+          <h1 class="sidebar__header-h">
+            Dashboard <span class="sidebar__header-span">v.01</span>
+          </h1>
+        </header>
+        <nav>
+          <a href="#" class="sidebar__menu-item">Dashboard</a>
+          <a href="#" class="sidebar__menu-item">Product</a>
+          <a href="#" class="sidebar__menu-item sidebar__menu-item--active"
+            >Customers</a
+          >
+          <a href="#" class="sidebar__menu-item">Income</a>
+          <a href="#" class="sidebar__menu-item">Promote</a>
+          <a href="#" class="sidebar__menu-item">Help</a>
+        </nav>
+      </div>
+      <div class="sidebar__bottom">
+        <div class="sidebar__upgrade">
+          <p>Upgrade to PRO to get access all Features!</p>
+          <button class="sidebar__upgrade-btn">Get Pro Now!</button>
+        </div>
+        <div class="sidebar__profile">
+          <img src="images/photo.png" alt="Profile-photo" />
+          <div>
+            <p>Evano</p>
+            <span>Project Manager</span>
+          </div>
         </div>
       </div>
     </aside>
 
     <!-- Main Content -->
     <main class="main-content">
-      <header class="main-content__header">Hello Evano 👋</header>
+      <header class="main-content__header">
+        <h2>Hello Evano 👋</h2>
+        <div class="main-content__header-search-bar">
+          <span></span>
+          <input type="text" class="search-bar__input" placeholder="Search" />
+        </div>
+      </header>
 
       <section class="main-content__summary-cards">
         <div class="summary-card">
-          <h3 class="summary-card__title">Total Customers</h3>
-          <p class="summary-card__number">5,423</p>
-          <p class="summary-card__change">▲ 16% this month</p>
+          <img src="images/people-icon.png" alt="People" />
+          <div class="summary-card__text">
+            <h3 class="summary-card__title">Total Customers</h3>
+            <p class="summary-card__number">5,423</p>
+            <p class="summary-card__change">
+              <span style="color: #16c098">▲ 16%</span> this month
+            </p>
+          </div>
         </div>
         <div class="summary-card">
-          <h3 class="summary-card__title">Members</h3>
-          <p class="summary-card__number">1,893</p>
-          <p class="summary-card__change" style="color: #e53935">
-            ▼ 1% this month
-          </p>
+          <img src="images/members-icon.png" alt="Members" />
+          <div class="summary-card__text">
+            <h3 class="summary-card__title">Members</h3>
+            <p class="summary-card__number">1,893</p>
+            <p class="summary-card__change">
+              <span style="color: #e53935">▼ 1%</span> this month
+            </p>
+          </div>
         </div>
         <div class="summary-card">
-          <h3 class="summary-card__title">Active Now</h3>
-          <p class="summary-card__number">189</p>
+          <img src="images/computer-icon.png" alt="Computer" />
+          <div class="summary-card__text">
+            <h3 class="summary-card__title">Active Now</h3>
+            <p class="summary-card__number">189</p>
+          </div>
         </div>
       </section>
 
       <section class="table-container">
-        <h2>All Customers</h2>
+        <div class="table-container__header">
+          <div class="table-container__text">
+            <h2>All Customers</h2>
+            <p style="color: #16c098">Active Members</p>
+          </div>
+          <div class="table-container__form">
+            <div class="table-container__form-search-bar">
+              <span></span>
+              <input
+                type="text"
+                class="search-bar__input"
+                placeholder="Search"
+              />
+            </div>
+            <div class="table-container__form-select">
+              <span></span>
+              <select>
+                <option value="all">All</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="new">Newest</option>
+                <option value="old">Oldest</option>
+              </select>
+            </div>
+          </div>
+        </div>
         <table>
           <thead>
             <tr>
@@ -82,13 +133,51 @@
               <td>United States</td>
               <td><span class="status--active">Active</span></td>
             </tr>
-            <!-- More rows as needed -->
+            <tr>
+              <td>Floyd Miles</td>
+              <td>Yahoo</td>
+              <td>(205) 555-0100</td>
+              <td>floyd@yahoo.com</td>
+              <td>Kiribati</td>
+              <td><span class="status--inactive">Inactive</span></td>
+            </tr>
+            <tr>
+              <td>Ronald Richards</td>
+              <td>Adobe</td>
+              <td>(302) 555-0107</td>
+              <td>ronald@adobe.com</td>
+              <td>Israel</td>
+              <td><span class="status--inactive">Inactive</span></td>
+            </tr>
+            <tr>
+              <td>Marvin McKinney</td>
+              <td>Tesla</td>
+              <td>(252) 555-0126</td>
+              <td>marvin@tesla.com</td>
+              <td>Iran</td>
+              <td><span class="status--active">Active</span></td>
+            </tr>
+            <tr>
+              <td>Jerome Bell</td>
+              <td>Google</td>
+              <td>(629) 555-0129</td>
+              <td>jerome@google.com</td>
+              <td>Réunion</td>
+              <td><span class="status--active">Active</span></td>
+            </tr>
           </tbody>
         </table>
         <div class="pagination">
-          <a href="#" class="pagination__link pagination__link--active">1</a>
-          <a href="#" class="pagination__link">2</a>
-          <a href="#" class="pagination__link">3</a>
+          <span>Showing data 1 to 8 of 256K entries</span>
+          <div class="pagination__btn">
+            <button class="pagination__link"><</button>
+            <button class="pagination__link pagination__link--active">1</button>
+            <button class="pagination__link">2</button>
+            <button class="pagination__link">3</button>
+            ...
+            <button class="pagination__link">40</button>
+            <button class="pagination__link">></button>
+          </div>
         </div>
       </section>
     </main>
